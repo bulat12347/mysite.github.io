@@ -1,0 +1,293 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Навигация */
+header {
+    background-color: #3649f4; /* Яркий красный для акцентов */
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Главная страница */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    padding: 120px 20px;
+    text-align: center;
+    color: black;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+    background-color: #334bff; /* Оранжево-красный цвет */
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.hero .btn-primary:hover {
+    background-color: #2b3cc0;
+}
+
+/* О риелторе */
+.about {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #3636f4; /* Яркий красный для заголовков */
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-photo {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+/* Услуги */
+.services {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #365cf4;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 30px;
+    width: 30%;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #3377ff;
+}
+
+.service-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Недвижимость */
+.properties {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.properties h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #365cf4;
+}
+
+.property-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.property-item {
+    background-color: white;
+    width: 45%;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.property-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.property-item p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.property-item .btn-secondary {
+    background-color: #334eff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.property-item .btn-secondary:hover {
+    background-color: #2b2dc0;
+}
+
+/* Контакты */
+.contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #3936f4;
+}
+
+.contact form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact form button {
+    background-color: #3a33ff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #302bc0;
+}
+
+/* Подвал */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-links {
+    margin-top: 20px;
+}
+
+footer .social-links a {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #3333ff;
+}
