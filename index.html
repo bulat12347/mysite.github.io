@@ -1,284 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="source/styles/mycss.css">
-    <link rel="stylesheet" href="source/styles/bgvideo.css">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="source/files/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="source/files/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="source/files/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="source/files/favicon_io/site.webmanifest">
-    <title>HiT</title>
+    <meta name="description" content="Фидаиль Палушев - профессиональный риелтор с 10-летним опытом работы. Помогу вам найти идеальную недвижимость или продать её.">
+    <title>Фидаиль Палушев — Риелтор</title>
+    <link rel="stylesheet" href="source/styles/styles.css">
 </head>
-
 <body>
+
+    <!-- Навигация -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="source/images/logo.png" alt="..."></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Contacts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">
-                                <img style="width: 35px; margin-inline: 1em;" src="source/files/yt.png" alt="yt">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">
-                                <img style="width: 25px; margin-inline: 1em;" src="source/files/tg.png" alt="tg">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pricing.html">Ренат</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav>
+            <div class="logo">Фидаиль Палушев</div>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#properties">Объекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section>
-        <div class="bgvideo">
-            <video src="source/files/video-bg.mp4" type="video/mp4" autoplay muted loop></video>
-            <div class="effect"></div> 
-            <div class="video-text">
-                <h1>Future's here</h1> 
-            </div>
+    <!-- Главная страница -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Фидаиль Палушев — Ваш надежный риелтор</h1>
+            <p>Помогу вам купить, продать или сдать недвижимость с максимальным комфортом.</p>
+            <a href="#contact" class="btn-primary">Связаться со мной</a>
         </div>
+    </section>
 
-        <div class="container-fluid mt-4">
-            <div class="row">
-                <div class="col-lg-1">
+    <!-- О риелторе -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О Фидаиле Палушеве</h2>
+            <p>Меня зовут Фидаиль Палушев, я профессиональный риелтор с более чем 10-летним опытом работы. Моя цель — сделать процесс покупки, продажи и аренды недвижимости максимально комфортным и безопасным для вас.</p>
+            <img src="fidail-photo.jpg" alt="Фидаиль Палушев" class="about-photo">
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Мои услуги</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Покупка недвижимости</h3>
+                    <p>Помогу выбрать лучшее предложение, сэкономить ваше время и деньги.</p>
                 </div>
-
-                <div class="col-lg-8 col-md-12">
-                    <div class="row">
-                        <div id="carouselExampleIndicators" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                    aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                                    aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
-                                    aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
-                                    aria-label="Slide 7"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
-                                    aria-label="Slide 8"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/laptop.png" class="w-100" alt="Laptop">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nam
-                                                    perferendis sed aut assumenda omnis quidem, earum id? Repudiandae
-                                                    eos in sed quod aut sit!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/gaming pc.png" class="w-100" alt="Gaming PC">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nam
-                                                    perferendis sed aut assumenda omnis quidem, earum id? Repudiandae
-                                                    eos in sed quod aut sit!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/vr.png" class="w-100" alt="VR">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nam
-                                                    perferendis sed aut assumenda omnis quidem, earum id? Repudiandae
-                                                    eos in sed quod aut sit!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/controller.png" class="w-100" alt="Controller">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-                                                    mollitia earum necessitatibus dignissimos aliquam explicabo
-                                                    distinctio corporis, unde modi magnam sequi delectus cupiditate
-                                                    ipsum autem!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/acc.png" class="w-100" alt="ACC">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-                                                    mollitia earum necessitatibus dignissimos aliquam explicabo
-                                                    distinctio corporis, unde modi magnam sequi delectus cupiditate
-                                                    ipsum autem!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/cpu.png" class="w-100" alt="CPU">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-                                                    mollitia earum necessitatibus dignissimos aliquam explicabo
-                                                    distinctio corporis, unde modi magnam sequi delectus cupiditate
-                                                    ipsum autem!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/gpu.png" class="w-100" alt="GPU">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-                                                    mollitia earum necessitatibus dignissimos aliquam explicabo
-                                                    distinctio corporis, unde modi magnam sequi delectus cupiditate
-                                                    ipsum autem!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="d-block w-100">
-                                        <div class="row">
-                                            <div class="col-lg-6 col-md-6">
-                                                <img src="source/images/other.png" class="w-100" alt="Other">
-                                            </div>
-                                            <div class="col-lg-6 col-md-6 slide-text">
-                                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-                                                    mollitia earum necessitatibus dignissimos aliquam explicabo
-                                                    distinctio corporis, unde modi magnam sequi delectus cupiditate
-                                                    ipsum autem!</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 text-center mt-4">
-                            <button type="button" class="btn btn-outline-primary btn-lg my-4">See more</button>
-                        </div>
-                        <div class="col-lg-12 col-md-12 text-center mt-4">
-                            <p>Can we help you?</p>
-                        </div>
-                        <div class="col-lg-12 col-md-12 text-center ">
-                            <img class="call-anim" style="width: 40px;" src="source/files/phone.png" alt="phone">
-                        </div>
-                    </div>
+                <div class="service-item">
+                    <h3>Продажа недвижимости</h3>
+                    <p>Продажа недвижимости с максимальной выгодой и минимальными рисками.</p>
                 </div>
-
-                <div class="col-lg-3 col-md-12">
-                    <div class="row px-2">
-                        <div class="col-lg-12 sidebar my-4">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, animi! Totam magni
-                                molestias ad qui iste tempora, culpa, mollitia aliquid dolore libero quam alias tempore
-                                magnam. <a href="#">Learn more>>></a></p>
-                        </div>
-                        <div class="col-lg-12 sidebar my-4">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, animi! Culpa, mollitia
-                                aliquid dolore libero quam alias tempore magnam. <a href="#">Learn more>>></a></p>
-                        </div>
-                        <div class="col-lg-12 sidebar my-4">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing iste tempora, culpa, mollitia aliquid
-                                dolore libero quam alias tempore magnam. <a href="#">Learn more>>></a></p>
-                        </div>
-                        <div class="col-lg-12 sidebar my-4">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing. Totam magni molestias ad qui iste
-                                tempora, culpa, mollitia aliquid dolore libero quam alias tempore magnam. <a
-                                    href="#">Learn more>>></a></p>
-                        </div>
-                    </div>
+                <div class="service-item">
+                    <h3>Аренда жилья</h3>
+                    <p>Помогу найти аренду по вашему бюджету с учетом всех пожеланий.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Оценка недвижимости</h3>
+                    <p>Проведу профессиональную оценку вашего имущества, чтобы вы могли продавать или сдавать его по справедливой цене.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Юридическая помощь</h3>
+                    <p>Юридическая поддержка при заключении сделок с недвижимостью.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Консультации</h3>
+                    <p>Дам консультации по любым вопросам, связанным с недвижимостью.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="mt-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 footer-text text-center">
-                    <p>All Rights Reserved 2022</p>
+    <!-- Объекты -->
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2>Актуальные предложения</h2>
+            <div class="property-list">
+                <div class="property-item">
+                    <img src="property1.jpg" alt="Квартира 1">
+                    <p>3-комнатная квартира в центре города. Цена: 10 000 000 ₽</p>
+                    <a href="#" class="btn-secondary">Подробнее</a>
                 </div>
-                <div class="col-lg-4 col-md-12 footer-text text-center">
-                    <p>Contacts<br>Job<br>Our Team</p>
+                <div class="property-item">
+                    <img src="property2.jpg" alt="Квартира 2">
+                    <p>2-комнатная квартира в новом жилом комплексе. Цена: 7 500 000 ₽</p>
+                    <a href="#" class="btn-secondary">Подробнее</a>
                 </div>
-                <div class="col-lg-4 col-md-12 media-links">
-                    <img style="width: 40px; margin-inline: 1em;" src="source/files/yt.png" alt="yt">
-                    <img style="width: 40px; margin-inline: 1em;" src="source/files/tg.png" alt="tg">
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контактная информация</h2>
+            <p>Если у вас есть вопросы или вы хотите записаться на консультацию, свяжитесь со мной:</p>
+            <ul>
+                <li>Телефон: +7 (919) 646-51-51</li>
+                <li>Email: ff@palushev.ru</li>
+            </ul>
+
+            <!-- Форма обратной связи -->
+            <form id="contact-form">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Сообщение</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Фидаиль Палушев. Все права защищены.</p>
+            <div class="social-links">
+                <a href="#">WhatsApp</a>
+                <a href="#">VK</a>
+                <a href="#">Telegram</a>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
-
 </html>
